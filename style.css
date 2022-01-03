@@ -1,0 +1,37 @@
+/* Inizio regole generali */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+li {
+    list-style: none;
+}
+
+a {
+    text-decoration: none;
+}
+/* Fine regole generali */
+
+/* Inizio regole header */
+/* Fine regole header */
+
+/* Inizio regole jumbotron */
+/* Fine regole jumbotron */
+
+/* Inizio regole sticky */
+.sticky {
+    position: -webkit-sticky; /* Safari & IE */
+    position: sticky;
+    top: 0;
+}
+/* Fine regole sticky */
+
+/* Inizio regole main */
+/* Fine regole main */
+
+
+
+
+
