@@ -3,6 +3,8 @@
     margin: 0;
     padding: 0;
     box-sizing: border-box;
+    color: white;
+    font-family: "Segoe UI", -apple-system, BlinkMacSystemFont, sans-serif;
 }
 
 li {
@@ -12,27 +14,81 @@ li {
 a {
     text-decoration: none;
 }
+
+a.underline:hover {
+    text-decoration: underline;
+}
+
+.flex {
+    display: flex;
+    align-items: center;
+}
 /* Fine regole generali */
 
 /* Inizio regole header */
-header div {
-    display: flex;
+header {
+    background-color: black;
+    font-size: 0.9rem;
 }
-
+    /* inizio top-header */
 .top-header {
-    height: 50px;
-    background-color: brown;
+    justify-content: right;
+    padding-top: 20px;
+    padding-right: 40px;
+    height: 30px;
 }
 
+.top-header nav ul li {
+    padding: 0 10px;
+}
+
+.top-header nav ul li a {
+    color: rgb(156, 156, 156);
+}
+
+.top-header nav ul li a:hover {
+    color: white;
+}
+
+i {
+    padding-right: 5px;
+    color: rgb(60, 63, 255);
+}
+
+#language-selection {
+    color: black;
+}
+
+#language-selection option {
+    color: black;
+}
+    /* fine top-header */
+
+    /* inizio bottom-header */
 .bottom-header {
-    display: flex;
+    justify-content: left;
+    padding-left: 40px;
     height: 50px;
-    background-color: burlywood;
+    margin: 20px 0;
 }
 
-.logo {
-
+.bottom-header .logo img {
+    width: 80%;
+    height: auto;
 }
+
+.bottom-header nav ul li a {
+    padding: 15.5px 15px;
+}
+
+.bottom-header nav ul li:hover {
+    background-color: white;
+}
+
+.bottom-header nav ul li:hover a {
+    color: black;
+}
+    /* fine bottom-header */
 /* Fine regole header */
 
 /* Inizio regole jumbotron */
