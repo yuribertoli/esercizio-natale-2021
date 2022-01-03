@@ -13,8 +13,10 @@
     <!-- Contact and header -->
     <header> 
 
+        <!-- Parte alta dx header -->
         <div class="top-header flex">
 
+            <!-- Contatti -->
             <nav>
                 <ul class="flex">
                     <li><a class="underline" href="#">Informativa sui cookies - Novità</a></li>
@@ -22,7 +24,7 @@
                     <li><a class="underline" href="#"><i class="fas fa-comment-alt"></i>Chat</a></li>
                     <li><a class="underline" href="#"><i class="fas fa-user-astronaut"></i>Account</a></li>
                     <li><a class="underline" href="#"><i class="fas fa-shopping-cart"></i>Carrello</a></li>
-                    <li>
+                    <li> <!-- selezione lingua -->
                         <select name="Language" id="language-selection">
                             <option value="italiano">Italiano</option>
                             <option value="inglese">English</option>
@@ -34,19 +36,93 @@
 
         </div>
 
+        <!-- Parte bassa sinistra header -->
         <div class="bottom-header flex">
 
+            <!-- Logo -->
             <div class="logo">
                 <a href="#"><img src="img/logo_coreldraw.png" alt="logo"></a>
             </div>
 
+            <!-- Menù di navigazione sito -->
             <nav>
                 <ul class="flex">
-                    <li class="flex"><a href="#">Prodotti</a></li>
+
+                    <!-- prodotti -->
+                    <li class="flex"><a href="#">Prodotti <i class="fas fa-chevron-down"></i></a>
+                        
+                        <!-- Sottomenù in hover -->
+                        <div class="undermenu">
+
+                            <div class="triangle">Grafica creativa
+                                
+                                <!-- Secondo sottomenù in hover -->
+                                <div class="hover-undermenu">
+                                    <a href="#">CorelDRAW Graphic Suite 2021 (Windows/Mac)</a>
+                                    <a href="#">CorelDRAW Standard 2021</a>
+                                    <a href="#">CorelDRAW Essential 2021</a>
+                                    <hr>
+                                    <h3>EDIZIONI PER APP STORE</h3>
+                                    <a href="#">CorelDRAW Store Edition (Windows)</a>
+                                    <a href="#">CorelDRAW Store Edition (Mac)</a>
+                                </div>
+
+                            </div>
+                            
+                            <div class="triangle">Grafica tecnica
+
+                                <!-- Secondo sottomenù in hover -->
+                                <div class="hover-undermenu">
+
+                                    <a href="#">CorelCAD 2021 (Windows/Mac)</a>
+                                    <a href="#">CorelDRAW Technical Suite 2021</a>
+                                    <a href="#">XVL Studio 3D CAD Corel Edition</a>
+                                    
+                                </div>
+
+                            </div>
+                            
+                            <div class="triangle">Licenze
+
+                                <!-- Secondo sottomenù in hover -->
+                                <div class="hover-undermenu">
+
+                                    <a href="#">CorelDRAW Graphic Suite - Licenza Aziendale (Windows/Mac)</a>
+                                
+                                </div>
+
+                            </div>
+                        
+                        </div>
+
+                    </li>    
+                    
+                    <!-- prove gratuite -->
                     <li class="flex"><a href="#">Prove Gratuite</a></li>
+                    
+                    <!-- business -->
                     <li class="flex"><a href="#">Business</a></li>
-                    <li class="flex"><a href="#">Supporto</a></li>
-                    <li class="flex"><a href="#">Apprendimento</a></li>
+                    
+                    <!-- supporto -->
+                    <li class="flex"><a href="#">Supporto <i class="fas fa-chevron-down"></i></a>
+
+                        <!-- Sottomenù in hover -->
+                        <div class="undermenu">
+                            <a href="#">Patch e aggiornamenti</a>
+                            <a href="#">Knowledgebase</a>
+                            <a href="#">Visualizza tutti</a>
+                        </div>
+
+                    </li>    
+                    
+                    <!-- apprendimento -->
+                    <li class="flex"><a href="#">Apprendimento <i class="fas fa-chevron-down"></i></a>
+                        <div class="undermenu">
+                            <a href="#">Storie di clienti</a>
+                            <a href="#">Visualizza tutti</a>
+                        </div>
+                    </li>
+                
                 </ul>
             </nav>
 
