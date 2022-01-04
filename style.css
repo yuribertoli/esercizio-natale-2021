@@ -304,6 +304,19 @@ span.blue-capital {
     font-weight: bold;
 }
         /* fine subscription */
+        /* inizio bottom-jumbotron */
+#bottom-jumbotron div {
+    width: 50%;
+}       
+
+#price-jumbotron {
+    background-color: brown;
+}
+
+#offer-jumbotron {
+    background-color: cadetblue;
+}
+        /* fine bottom jumbotron */
     /* fine regole text */
 /* Fine regole jumbotron */
 
