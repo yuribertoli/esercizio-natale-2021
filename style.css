@@ -8,8 +8,7 @@
 }
 
 body {
-    background-color: grey;
-    overflow-x: hidden;
+    background-color: rgb(29, 28, 28);
 }
 
 li {
@@ -38,6 +37,15 @@ a.underline:hover {
     display: table;
     clear: both;
 }
+
+.button-transparent {
+    padding: 5px 20px;
+    background-color: transparent;
+    border: 2px solid white;
+    text-transform: uppercase;
+}
+
+
 /* Fine regole generali */
 
 /* Inizio regole header */
@@ -212,9 +220,90 @@ div.undermenu .hover-undermenu {
 
     /* inizio regole text */
 .text-jumbotron {
+    padding: 20px 50px;
+}    
+        /* inizio titolo */
+#title-jumbotron {
+    font-size: 1.5rem;
+}
+
+#title-jumbotron em {
+    text-transform: uppercase;
+    font-weight: 600;
+}
+
+#title-jumbotron span:last-child {
+    font-size: 1.2rem;
+}
+        /* fine titolo */
+        /* inizio trial */
+#trial-jumbotron {
+    margin: 20px 0;
+}
+
+.button-transparent i {
+    color: white;
+    padding-left: 10px;
+    margin-right: -5px;
+    font-size: 0.9rem;
+}
+
+#trial-jumbotron img {
+    transform: scale(0.6);
 }    
 
+#trial-jumbotron span {
+    margin-left: -20px;
+    font-size: 0.8rem;
+}
+        /* fine trial */
+.text-jumbotron hr {
+    color: rgba(255, 255, 255, 0.2)
+}
+        /* inizio title options */
+#title-options {
+    margin: 15px 0;
+    display: flex;
+    justify-content: space-between;
+    font-size: 0.9rem;
+    font-weight: 200;
+}        
+        /* fine title options */
+        /* inizio plan-options */
+#plan-options {
+    display: flex;
+    justify-content: space-between;
+}
 
+.button-plan {
+    padding: 25px 50px;
+    font-size: 0.9rem;
+    border: 1px solid white;
+    width: 49%;
+    white-space: nowrap;
+    justify-content: center;
+    flex-direction: column;
+    border-radius: 5px;
+}
+
+span.blue-capital {
+    text-transform: uppercase;
+    color: rgb(60, 63, 255);
+    font-size: 0.8rem;
+    font-weight: 600;
+}
+        /* fine plan-options */
+        /* inizio subscription */
+#subscription {
+    margin: 15px 0;
+    text-align: justify;
+    font-size: 0.78rem;
+}        
+
+#subscription p span {
+    font-weight: bold;
+}
+        /* fine subscription */
     /* fine regole text */
 /* Fine regole jumbotron */
 
