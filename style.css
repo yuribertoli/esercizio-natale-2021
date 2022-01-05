@@ -209,12 +209,6 @@ div.undermenu .hover-undermenu {
     width: 50%;
 }
 
-.promo-jumbotron {
-    width: 100%;
-    height: 100px;
-    background-color: blue;
-}
-
     /* inizio regole img */
 .img-jumbotron img {
     position: relative;
@@ -362,6 +356,31 @@ span.blue-capital {
 }
         /* fine bottom jumbotron */
     /* fine regole text */
+    /* inizio regole promo */
+.promo-jumbotron {
+    width: 100%;
+    height: 50px;
+    background-color: rgb(8, 194, 138);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.promo-jumbotron p {
+    color: black;
+    font-weight: 600;
+    font-size: 1.1rem;
+}
+
+.promo-jumbotron p a {
+    color: black;
+    text-decoration: underline;
+}
+
+.promo-jumbotron p a:hover {
+    text-decoration: none;
+}
+    /* fine regole promo */
 /* Fine regole jumbotron */
 
 /* Inizio regole sticky */
