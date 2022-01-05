@@ -32,7 +32,7 @@ a.underline:hover {
     float: left;
 }
 
-.clearfix {
+.clearfix::after {
     content: "";
     display: table;
     clear: both;
@@ -45,7 +45,15 @@ a.underline:hover {
     text-transform: uppercase;
 }
 
-
+.button-blue {
+    text-transform: uppercase;
+    color: white;
+    background-color: rgb(25, 158, 247);
+    padding: 5px 50px;
+    font-size: 1.2rem;
+    margin: 10px 0;
+    text-align: center;
+}
 /* Fine regole generali */
 
 /* Inizio regole header */
@@ -305,16 +313,52 @@ span.blue-capital {
 }
         /* fine subscription */
         /* inizio bottom-jumbotron */
+#bottom-jumbotron {
+    display: flex;
+    justify-content: space-between;
+    width: 100%;
+}
+
 #bottom-jumbotron div {
-    width: 50%;
+    width: 48%;
 }       
 
-#price-jumbotron {
-    background-color: brown;
+#price-jumbotron, #offer-jumbotron {
+    display: flex;
+    flex-direction: column;
 }
 
 #offer-jumbotron {
-    background-color: cadetblue;
+    margin: 30px 0 0 30px;
+    border-left: 1px solid rgba(255, 255, 255, 0.2);
+    height: 60px;
+    padding-left: 10px;
+}
+
+#price-jumbotron span {
+    font-size: 1.5rem;
+}
+
+#price-jumbotron span small, #price-jumbotron small {
+    font-size: 0.7rem;
+}
+
+#price-jumbotron a.underline {
+    font-size: 0.7rem;
+    margin-bottom: 5px;
+}
+
+#offer-jumbotron span:first-child {
+    font-size: 1rem;
+    text-transform: uppercase;
+}
+
+#offer-jumbotron span:last-of-type {
+    font-size: 0.9rem;
+}
+
+#offer-jumbotron a {
+    font-size: 0.8rem;
 }
         /* fine bottom jumbotron */
     /* fine regole text */
