@@ -19,7 +19,7 @@ a {
     text-decoration: none;
 }
 
-a.underline:hover {
+.underline:hover {
     text-decoration: underline;
 }
 
@@ -577,6 +577,15 @@ span.blue-capital {
     margin: 20px 0;
 }
     /* fine third-block */
+    /* inizio fourth block */
+.fourth-block {
+    background-color: white;
+}
+
+.fourth-block h3, .fourth-block p {
+    color: black;
+}
+    /* fine fourth block */
 /* Fine regole main */
 
 
