@@ -21,6 +21,7 @@ a {
 
 .underline:hover {
     text-decoration: underline;
+    cursor: pointer;
 }
 
 a.hoverline {
@@ -582,9 +583,78 @@ span.blue-capital {
     background-color: white;
 }
 
-.fourth-block h3, .fourth-block p {
-    color: black;
+.fourth-block .nav-column {
+    width: 40%;
+    padding: 110px 85px;
 }
+
+.fourth-block .img-nav-row {
+    width: 60%;
+    padding: 160px 50px 160px 10px;
+}
+
+.fourth-block .img-nav-row img {
+    width: 100%;
+    height: auto;
+}
+
+.fourth-block h2, .fourth-block h3, .fourth-block p {
+    color: black;
+    font-weight: 400;
+}
+    /* inizio title */
+.fourth-block .title-nav-column h2 {
+    font-size: 2.5rem;
+    margin-bottom: 20px;
+} 
+
+.fourth-block .title-nav-column p {
+    text-align: justify;
+    padding-bottom: 30px;
+    font-size: 0.9rem;
+    border-bottom: 1px solid rgba(0, 0, 0, 0.2);
+}
+    /* fine title */
+    /* inizio list-nav */
+.list-nav-column li {
+    border-bottom: 1px solid rgba(0, 0, 0, 0.2);
+}
+
+.list-nav-column h3 {
+    font-size: 0.9rem;
+    padding: 10px 0;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.list-nav-column h3 img {
+    width: 20px;
+    height: auto;
+    opacity: 0.9;
+}
+
+.list-nav-column p {
+    font-size: 0.8rem;
+} 
+        /* inizio checkbox */
+#checkbtn1, .listing {
+    display: none;
+}
+
+#checkbtn1:checked ~ .listing {
+    display: block;
+}
+
+#checkbtn2, .listing {
+    display: none;
+}
+
+#checkbtn2:checked ~ .listing {
+    display: block;
+}
+        /* fine checkbox */
+    /* fine list-nav */
     /* fine fourth block */
 /* Fine regole main */
 
