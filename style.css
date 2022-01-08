@@ -632,14 +632,13 @@ span.blue-capital {
     width: 20px;
     height: auto;
     opacity: 0.9;
-    outline: 0;
+    transform: rotate(360deg);
+    transition: transform 0.5s;
 }
 
-.list-nav-column h3 img:focus {
-    transform: rotate(45deg);
-    -webkit-transform: rotate(45deg);
-    -ms-transform: rotate(45deg);
-    transition: .3s transform ease-in-out;
+.list-nav-column h3:active img {
+    transform: rotate(0deg);
+    transition:  0s;
 }
 
 .list-nav-column p {
@@ -655,6 +654,7 @@ span.blue-capital {
 
 #checkbtn1:checked ~ .listing {
     display: block;
+    animation: fade_in_show 0.7s ease-in;
 }
 
 #checkbtn2, .listing {
@@ -663,6 +663,7 @@ span.blue-capital {
 
 #checkbtn2:checked ~ .listing {
     display: block;
+    animation: fade_in_show 0.7s ease-in;
 }
 
 #checkbtn3, .listing {
@@ -671,6 +672,7 @@ span.blue-capital {
 
 #checkbtn3:checked ~ .listing {
     display: block;
+    animation: fade_in_show 0.7s ease-in;
 }
 
 #checkbtn4, .listing {
@@ -679,6 +681,7 @@ span.blue-capital {
 
 #checkbtn4:checked ~ .listing {
     display: block;
+    animation: fade_in_show 0.7s ease-in;
 }
 
 #checkbtn5, .listing {
@@ -687,6 +690,7 @@ span.blue-capital {
 
 #checkbtn5:checked ~ .listing {
     display: block;
+    animation: fade_in_show 0.7s ease-in;
 }
 
 #checkbtn6, .listing {
@@ -695,6 +699,17 @@ span.blue-capital {
 
 #checkbtn6:checked ~ .listing {
     display: block;
+    animation: fade_in_show 0.7s ease-in;
+}
+
+@keyframes fade_in_show {
+    0% {
+         opacity: 0;
+    }
+
+    100% {
+         opacity: 1;
+    }
 }
         /* fine checkbox */
     /* fine list-nav */
