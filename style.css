@@ -649,74 +649,86 @@ span.blue-capital {
     margin: 5px 0 20px;
 } 
         /* inizio checkbox */
-#hideimg1 {
+#hideimg1, 
+#hideimg2, 
+#hideimg3, 
+#hideimg4, 
+#hideimg5, 
+#hideimg6 {
+    opacity: 0;
     position: absolute;
-    z-index: 10;
-    left: 102%;
-    top: 160px;
-    width: 138%;
-    height: auto;
-}
-
-#hideimg2, #hideimg3, #hideimg4, #hideimg5, #hideimg6 {
-    position: absolute;
-    z-index: 10;
     left: 100%;
     top: 160px;
     width: 140%;
     height: auto;
 }
 
-#checkbtn1, .listing, #hideimg1 {
+img#hideimg1 {
+    left: 102%;
+    top: 160px;
+    width: 138%;
+}
+
+#checkbtn1:checked ~ #hideimg1,
+#checkbtn2:checked ~ #hideimg2, 
+#checkbtn3:checked ~ #hideimg3, 
+#checkbtn4:checked ~ #hideimg4,
+#checkbtn5:checked ~ #hideimg5,
+#checkbtn6:checked ~ #hideimg6 {
+    opacity: 1;
+    animation: fade-in 0.7s ease-in;
+}
+
+#checkbtn1, .listing { /* 1 */
     display: none;
 }
 
-#checkbtn1:checked ~ .listing, #checkbtn1:checked ~ #hideimg1 {
+#checkbtn1:checked ~ .listing {
     display: block;
     animation: fade-in 0.7s ease-in;
 }
 
-#checkbtn2, .listing, #hideimg2 {
+#checkbtn2, .listing { /* 2 */
     display: none;
 }
 
-#checkbtn2:checked ~ .listing, #checkbtn2:checked ~ #hideimg2 {
+#checkbtn2:checked ~ .listing {
     display: block;
     animation: fade-in 0.7s ease-in;
 }
 
-#checkbtn3, .listing {
+#checkbtn3, .listing { /* 3 */
     display: none;
 }
 
-#checkbtn3:checked ~ .listing, #checkbtn3:checked ~ #hideimg3 {
+#checkbtn3:checked ~ .listing {
     display: block;
     animation: fade-in 0.7s ease-in;
 }
 
-#checkbtn4, .listing {
+#checkbtn4, .listing { /* 4 */
     display: none;
 }
 
-#checkbtn4:checked ~ .listing, #checkbtn4:checked ~ #hideimg4 {
+#checkbtn4:checked ~ .listing {
     display: block;
     animation: fade-in 0.7s ease-in;
 }
 
-#checkbtn5, .listing {
+#checkbtn5, .listing { /* 5 */
     display: none;
 }
 
-#checkbtn5:checked ~ .listing, #checkbtn5:checked ~ #hideimg5 {
+#checkbtn5:checked ~ .listing {
     display: block;
     animation: fade-in 0.7s ease-in;
 }
 
-#checkbtn6, .listing {
+#checkbtn6, .listing { /* 6 */
     display: none;
 }
 
-#checkbtn6:checked ~ .listing, #checkbtn6:checked ~ #hideimg6 {
+#checkbtn6:checked ~ .listing {
     display: block;
     animation: fade-in 0.7s ease-in;
 }
