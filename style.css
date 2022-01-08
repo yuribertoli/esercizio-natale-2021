@@ -584,6 +584,7 @@ span.blue-capital {
 }
 
 .fourth-block .nav-column {
+    position: relative;
     width: 40%;
     padding: 110px 85px;
 }
@@ -648,61 +649,79 @@ span.blue-capital {
     margin: 5px 0 20px;
 } 
         /* inizio checkbox */
-#checkbtn1, .listing {
+#hideimg1 {
+    position: absolute;
+    z-index: 10;
+    left: 102%;
+    top: 160px;
+    width: 138%;
+    height: auto;
+}
+
+#hideimg2, #hideimg3, #hideimg4, #hideimg5, #hideimg6 {
+    position: absolute;
+    z-index: 10;
+    left: 100%;
+    top: 160px;
+    width: 140%;
+    height: auto;
+}
+
+#checkbtn1, .listing, #hideimg1 {
     display: none;
 }
 
-#checkbtn1:checked ~ .listing {
+#checkbtn1:checked ~ .listing, #checkbtn1:checked ~ #hideimg1 {
     display: block;
-    animation: fade_in_show 0.7s ease-in;
+    animation: fade-in 0.7s ease-in;
 }
 
-#checkbtn2, .listing {
+#checkbtn2, .listing, #hideimg2 {
     display: none;
 }
 
-#checkbtn2:checked ~ .listing {
+#checkbtn2:checked ~ .listing, #checkbtn2:checked ~ #hideimg2 {
     display: block;
-    animation: fade_in_show 0.7s ease-in;
+    animation: fade-in 0.7s ease-in;
 }
 
 #checkbtn3, .listing {
     display: none;
 }
 
-#checkbtn3:checked ~ .listing {
+#checkbtn3:checked ~ .listing, #checkbtn3:checked ~ #hideimg3 {
     display: block;
-    animation: fade_in_show 0.7s ease-in;
+    animation: fade-in 0.7s ease-in;
 }
 
 #checkbtn4, .listing {
     display: none;
 }
 
-#checkbtn4:checked ~ .listing {
+#checkbtn4:checked ~ .listing, #checkbtn4:checked ~ #hideimg4 {
     display: block;
-    animation: fade_in_show 0.7s ease-in;
+    animation: fade-in 0.7s ease-in;
 }
 
 #checkbtn5, .listing {
     display: none;
 }
 
-#checkbtn5:checked ~ .listing {
+#checkbtn5:checked ~ .listing, #checkbtn5:checked ~ #hideimg5 {
     display: block;
-    animation: fade_in_show 0.7s ease-in;
+    animation: fade-in 0.7s ease-in;
 }
 
 #checkbtn6, .listing {
     display: none;
 }
 
-#checkbtn6:checked ~ .listing {
+#checkbtn6:checked ~ .listing, #checkbtn6:checked ~ #hideimg6 {
     display: block;
-    animation: fade_in_show 0.7s ease-in;
+    animation: fade-in 0.7s ease-in;
 }
 
-@keyframes fade_in_show {
+@keyframes fade-in {
     0% {
          opacity: 0;
     }
