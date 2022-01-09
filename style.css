@@ -24,11 +24,11 @@ a {
     cursor: pointer;
 }
 
-a.hoverline {
+.hoverline {
     text-decoration: underline;
 }
 
-a.hoverline:hover {
+.hoverline:hover {
     text-decoration: none;
 }
 
@@ -783,9 +783,92 @@ span.blue-capital {
     /* fine fifth-block */
     /* inizio sixth-block */
 .sixth-block {
+    display: flex;
+    justify-content: center;
+    padding: 100px 0;
     background: linear-gradient(to right, #fed536 0%, #f77d31 100%);
 }
+
+.sixth-block .container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    width: 60%;
+}
+
+.sixth-block * {
+    color: black;
+}
+
+.sixth-block q {
+    font-size: 2.2rem;
+    font-weight: 600;
+    text-align: center;
+}
+
+.sixth-block q {
+    quotes: "\201C" "\201D";
+}
+
+.sixth-block span.name-review {
+    text-transform: uppercase;
+    font-size: 1.3rem;
+    margin: 20px 0;
+}
+
+.sixth-block a {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.sixth-block a img {
+    width: 50px;
+    height: auto;
+    margin-bottom: 10px;
+}
     /* fine sixth-block */
+    /* inizio seventh-block */
+.seventh-block {
+    background-color: white;
+}
+
+#seventh-title {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+#seventh-title * {
+    color: black;
+    font-weight: 400;
+}
+ 
+#seventh-title h2 {
+    font-size: 2.5rem;
+    margin-top: 50px;
+    margin-bottom: 15px;
+}
+
+.seventh-block .logo-partners div img {
+    width: 35%;
+}
+
+.seventh-block .logo-partners div.float-l {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+}
+
+.seventh-block span {
+    color: black;
+    font-size: 1.1rem;
+    width: 42%;
+    margin-top: 10px;
+}
+    /* fine seventh-block */
 /* Fine regole main */
 
 
