@@ -596,6 +596,7 @@ span.blue-capital {
 
 .fourth-block .img-nav-row img {
     width: 100%;
+    max-width: 930px;
     height: auto;
 }
 
@@ -648,8 +649,7 @@ span.blue-capital {
     width: 90%;
     margin: 5px 0 20px;
 } 
-        /* inizio checkbox */
-#hideimg1, 
+            /* inizio checkbox */
 #hideimg2, 
 #hideimg3, 
 #hideimg4, 
@@ -660,16 +660,10 @@ span.blue-capital {
     left: 100%;
     top: 160px;
     width: 140%;
+    max-width: 1050px;
     height: auto;
 }
 
-img#hideimg1 {
-    left: 102%;
-    top: 160px;
-    width: 138%;
-}
-
-#checkbtn1:checked ~ #hideimg1,
 #checkbtn2:checked ~ #hideimg2, 
 #checkbtn3:checked ~ #hideimg3, 
 #checkbtn4:checked ~ #hideimg4,
@@ -742,9 +736,56 @@ img#hideimg1 {
          opacity: 1;
     }
 }
-        /* fine checkbox */
-    /* fine list-nav */
+            /* fine checkbox */
+        /* fine list-nav */
     /* fine fourth block */
+    /* inizio fifth-block */
+.fifth-block {
+    background-color: white;
+}
+
+.fifth-block .title {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.fifth-block .title * {
+    color: black;
+    font-weight: 400;
+}
+
+.fifth-block .title h2 {
+    font-size: 2.5rem;
+    margin-bottom: 20px;
+}
+        /* inizio loghi */
+.logo-partners {
+    margin-top: 60px;
+    padding: 0 30px;
+    padding-bottom: 40px;
+}
+
+.logo-partners div {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: calc(100% / 4);
+    object-fit: contain;
+    margin: 30px 0;
+}
+
+.logo-partners div img {
+    width: 80%;
+    height: auto;
+}
+        /* fine loghi */
+    /* fine fifth-block */
+    /* inizio sixth-block */
+.sixth-block {
+    background: linear-gradient(to right, #fed536 0%, #f77d31 100%);
+}
+    /* fine sixth-block */
 /* Fine regole main */
 
 
